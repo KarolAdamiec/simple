@@ -1,1 +1,1 @@
-module.exports = "bujaka!";
+module.exports = "asta";
