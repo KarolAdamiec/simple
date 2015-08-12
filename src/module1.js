@@ -1,1 +1,1 @@
-module.exports = "asta";
+module.exports = "Message from the bottle!";

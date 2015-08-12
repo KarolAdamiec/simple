@@ -1,3 +1,7 @@
+/*
+* ES5 syntax only here...
+* Rename the file to webpack.config.babel.js for ES6/7
+*/
 var webpack = require('webpack');
 
 module.exports = {
