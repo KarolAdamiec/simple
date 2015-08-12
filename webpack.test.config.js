@@ -3,16 +3,20 @@
 * Rename the file to webpack.config.babel.js for ES6/7
 */
 var webpack = require('webpack');
+var fs = require('fs');
+var entryArray = fs.readdirSync('./test').map(function(testFile){
+                      return './test/' + testFile;
+                  });
 
 module.exports = {
 	devtool: 'source-map',
-    entry: ['webpack/hot/dev-server','./index'],
+  target: 'node',
+    entry: entryArray,
     output: {
         path: __dirname + "/dist",
-        filename: "bundle.js"
+        filename: "testBundle.js"
     },
     plugins: [
-    	new webpack.HotModuleReplacementPlugin(),
     	new webpack.NoErrorsPlugin()
     ],
     module: {
