@@ -4,11 +4,13 @@
   "description": "Simple template for modern SPA",
   "main": "index.js",
   "scripts": {
+    "serve": "node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Karol Adamiec",
   "license": "BSD",
   "devDependencies": {
-    "webpack": "^1.11.0"
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
   }
 }
