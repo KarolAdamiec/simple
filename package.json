@@ -1,0 +1,14 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "Simple template for modern SPA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karol Adamiec",
+  "license": "BSD",
+  "devDependencies": {
+    "webpack": "^1.11.0"
+  }
+}
