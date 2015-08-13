@@ -4,7 +4,7 @@
   "description": "Simple template for modern SPA",
   "main": "index.js",
   "scripts": {
-    "serve": "node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "start": "webpack-dev-server",
     "tape": "node dist/testBundle.js | faucet",
     "test": "./test.sh"
   },
