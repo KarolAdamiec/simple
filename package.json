@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "tape": "node dist/testBundle.js | faucet",
+    "tape": "node dist/test.bundle.js | faucet",
     "test": "./test.sh"
   },
   "author": "Karol Adamiec",
