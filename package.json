@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "serve": "node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "webpack --config webpack.test.config.js ; node dist/testBundle.js | node_modules/faucet/bin/cmd.js"
+    "tape": "node dist/testBundle.js | faucet",
+    "test": "./test.sh"
   },
   "author": "Karol Adamiec",
   "license": "BSD",
   "devDependencies": {
     "babel-core": "^5.8.22",
     "babel-loader": "^5.3.2",
+    "chokidar-cli": "^1.0.1",
     "faucet": "0.0.1",
     "react-hot-loader": "^1.2.8",
     "tape": "^4.0.3",

@@ -9,7 +9,7 @@ var entryArray = fs.readdirSync('./test').map(function(testFile){
                   });
 
 module.exports = {
-	devtool: 'source-map',
+	devtool: 'eval',
   target: 'node',
     entry: entryArray,
     output: {
