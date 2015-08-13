@@ -5,7 +5,7 @@
 var webpack = require('webpack');
 
 module.exports = {
-	devtool: 'source-map',
+	devtool: 'eval',
     entry: ['webpack/hot/dev-server','./index'],
     output: {
         path: __dirname + "/dist",
@@ -17,7 +17,7 @@ module.exports = {
     ],
     module: {
    		loaders: [
-   			{ test: /\.js$/, loaders: ['babel'], exclude: /node_modules/ }
+   			{ test: /\.js$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ }
     	]
   	}
 };
